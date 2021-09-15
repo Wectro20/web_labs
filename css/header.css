@@ -1,0 +1,133 @@
+.navbar{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+header{
+    align-items: center;
+}
+.header__menu{
+    display: none;
+    cursor: pointer;
+}
+.header__menu > img{
+    max-width: 32px;
+}
+.navbar ul{
+    display: flex;
+}
+.headerTitle {
+    font-weight: 900;
+    font-size: 26px;
+    color: #37447e;
+    font-family: Roboto;  
+}
+.headerNav-item{
+    margin-left: 60px;
+    font-family: Roboto;
+    font-size: 14px;
+}
+.headerLearnMore{
+    background: #111B47;
+    border-radius: 2px;
+    color: white;
+    width: 104px;
+    height: 26px;
+    font-weight: 500;
+    font-size: 12px;
+}
+.headerLearnMore:hover{
+    background-color: white;
+    color:#111B47;
+}
+.headerBuyNow{
+    background: #FFD166;
+    border-radius: 2px;
+    color: #111B47;
+    font-weight: 500;
+    font-size: 12px;
+    width: 104px;
+    height: 26px;
+    margin-left: 18px;
+}
+.headerBuyNow:hover{
+    background-color: #111B47;
+    color:#FFD166;
+}
+.headerButtons{
+    align-items: center;
+    display: flex;
+}
+.headerButtons ul li{
+    padding-right: 60px;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 768px) {
+    header{
+        top:0%;
+        height: 32px;
+        background-color: #e7ecff;
+        max-width: 100%;
+    }
+    .nav_menu ul{
+        flex-direction: column;
+        margin-right: 30px;
+        top: 10px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .headerButtons{
+        flex-direction: column;
+    }
+    .headerBuyNow{
+        display: none;
+    }
+    .headerLearnMore{
+        display: none;
+    }
+    .header__menu{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 15px;
+    }
+    .headerTitle{
+        display: none;
+    }
+    .headerTitleMobile{
+        font-weight: 900;
+        font-size: 26px;
+        color: #37447e;
+        font-family: Roboto;  
+    }
+    .navbar{
+        background: #e7ecff;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 0;
+        clip-path: circle(0 at top left);
+        transition: clip-path 0.9s ease-in;
+    }
+    .navbar.open {
+        clip-path: circle(768px at top);
+    }
+    .navbar ul{
+        flex-direction: column;
+        height: 100%;
+    }
+    .navbar .headerNav-item {
+        margin-right: 0;
+        padding-top: 2vh;
+        flex: 1;
+    }
+    .navbar a {
+        font-weight: 500;
+        display: block;
+        font-size: 32px;
+    }
+}
+

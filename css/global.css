@@ -1,0 +1,19 @@
+body{
+    max-width: 1440px;
+    margin:0 auto;
+    background: #fffcfc;
+}
+
+button{
+    border: 0;
+}
+a{
+    text-decoration: none;
+    color: #505F98;
+}
+li{
+    display: block;
+}
+@media screen and (min-width: 2560px) {
+
+}
