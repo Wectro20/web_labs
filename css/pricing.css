@@ -1,0 +1,92 @@
+.pricingContainer{
+    padding-top: 170px;
+    position: relative;
+}
+.pricingTiles{
+    display: flex;
+}
+.pricingHeading{
+    height: 48px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    color: #091133;
+}
+.pricingParagraph{
+    width: 730px;
+    height: 52px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6F7CB2;
+}
+.pricingTiles{
+    padding-top: 88px;
+}
+.tile h1{
+    height: 48px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    color: #37447E;
+}
+.tile h3{
+    height: 32px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: #091133;
+}
+.tile p{
+    height: 102px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 24px;
+    color: #5D6970;
+}
+.tile{
+    width: 350px;
+    margin-right: 30px;
+}
+.pricingButton{
+    background: #111B47;
+    border-radius: 2px;
+    color: white;
+    width: 189px;
+    height: 26px;
+    font-weight: 500;
+    font-size: 12px;
+    animation: animation 2s linear infinite;
+}
+.pricingButton:hover{
+    background-color: white;
+    color:#111B47;
+}
+@media screen and (max-width: 768px) {
+    .pricingContainer{
+        flex-direction: column;
+    }
+    .pricingHeading{
+        font-size: 25px;
+        position: relative;
+        width: 320px;
+    }
+    .pricingParagraph{
+        width: 300px;
+    }
+    .pricingTiles{
+        display: block;
+        justify-content: center;
+    }
+    .pricingTiles p{
+        width: 300px;
+    }
+    .tile{
+        margin: 50px 0px 0px 0px;
+        width: 250px;
+    }
+}

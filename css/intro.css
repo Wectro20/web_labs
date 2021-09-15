@@ -1,0 +1,79 @@
+.introContainer{
+    padding-top: 100px;
+    position: relative;
+    position: relative;
+    display: flex;
+}
+.introInner{
+    max-width: 540px; 
+}
+.introHeading{
+    height: 48px;
+    top: -20px;   
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    color: #091133; 
+}
+.introParagraph{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6F7CB2;
+}
+.title img{
+    position: relative;
+    width: 36px;
+    height: 36px;
+}
+.title{
+    padding-top: 40px;
+    max-width: 255px;
+    max-height: 138px;
+}
+.introTitles{
+    display: flex;
+}
+.title h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #091133;
+}
+.title p{
+    height: 54px;
+    top: 82px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #5D6970;
+}
+.mobileLogin{
+    position: relative;
+    z-index: -1;
+    animation: floating 3s linear infinite;
+}
+@media screen and (max-width: 768px) {
+    .introContainer{
+        flex-direction: column;
+    }
+    .introHeading{
+        font-size: 25px;
+        position: relative;
+        width: 320px;
+    }
+    .introParagraph{
+        width: 300px;
+    }
+    .mobileLogin{
+        max-width: 320px;
+    }
+}
