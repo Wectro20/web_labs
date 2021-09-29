@@ -62,12 +62,12 @@ countButton.addEventListener("click", () => {
 });
 
 switchButton.addEventListener("change", () => {
-    let sortedPlanes = Array.from(conference);
+    let sortedConferences = Array.from(conference);
     if (switchButton.checked) {
-        sortedPlanes.sort(
+        sortedConferences.sort(
             (first, second) => first.amount - second.amount);
     }
-    renderItemsList(sortedPlanes);
+    renderItemsList(sortedConferences);
 });
 
 
