@@ -1,0 +1,68 @@
+.header__nav {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    border-radius: 0 0 5px 5px;
+}
+.header__nav ul {
+    display: flex;
+}
+.header__nav__ul {
+    display: flex;
+    align-items: center;
+    
+}
+.header__nav__interaction {
+    display: flex;
+    padding-right: 20px;
+}
+.header__nav__logo {
+    font-family: Avenir;
+    font-weight: bold;
+    font-size: 24px;
+}
+.header__nav-item {
+    padding: 0 10px 0 40px;
+}
+.header__nav-item a {
+    color: #354149;
+    font-size: 18px;
+    font-family: Helvetica;
+}
+.header__nav__logo {
+    padding-left: 20px;
+}
+.header__search__input{
+    margin-right: 20px;
+    border-color: #0640ff;
+    border-style: solid;
+    border-radius: 8px;
+    color: #0640ff;
+    padding: 5px 20px;
+}
+.header__search__button {
+    color: #0640ff;
+    border-style: solid;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-left: 30px;
+    font-family: Helvetica;
+}
+.header__search__button:hover {
+    color: rgb(2, 189, 18);
+    border-style: double;
+}
+.header__clear__button {
+    color: #ff0644;
+    border-style: solid;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-left: 30px;
+    font-family: Helvetica;
+}
+.header__clear__button:hover {
+    color: #8706ff;
+    border-style: double;
+}

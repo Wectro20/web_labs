@@ -1,0 +1,7 @@
+@import "./header.css";
+@import "./global.css";
+@import "./normalize.min.css";
+@import "./reset.min.css";
+@import "./main_page.css";
+@import "./create.css";
+@import "item.css";

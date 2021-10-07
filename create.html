@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Conference</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Avenir:wght@400;500;900&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;500;900&display=swap"rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__nav">         
+            <nav id="nav__links" class="header__nav__ul">
+                <a class="header__nav__logo">CBA</a>
+                <ul>
+                    <li class="header__nav-item">
+                        <a class="heaader__nav-link" href="index.html">Conference</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="heaader__nav-link" href="create.html">Create Conference</a>
+                    </li>                    
+                </ul>
+            </nav>
+            <div class="header__nav__interaction">
+                <form >
+                    <input id="search__input" class="header__search__input" type="text" placeholder="Type something...">
+                </form>
+                <button id="search__button" class="header__search__button">Search</button>
+                <button id="clear__button" class="header__clear__button">Clear</button>
+            </div> 
+        </div>
+    </header>
+    <section class="create">
+        <form class="create__participant">
+            <h1 id = "titleConference">Create Conference</h1>
+            <label for="name" class="form__name__label">Name</label>
+            <input class="form__name" id="name" type="text" placeholder="Text...">
+            <label for="amount" class="form__amount__label">Amount of people</label>
+            <input class="form__amount" id="amount" type="number">
+            <label for="price" class="form__price__label">Price of Ticket</label>
+            <input class="form__description" id="price" type="number">
+            <button id="submit__button" type="submit" class="submit">Submit</button>
+        </form>
+    </section>
+    <script type="module" src="./js/create.js"></script>
+</body>
+</html>
