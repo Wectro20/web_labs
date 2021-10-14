@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Avenir:wght@400;500;900&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;500;900&display=swap"rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__nav">         
+            <nav id="nav__links" class="header__nav__ul">
+                <a class="header__nav__logo">CBA</a>
+                <ul>
+                    <li class="header__nav-item">
+                        <a class="heaader__nav-link" href="index.html">Conference</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="heaader__nav-link" href="create.html">Create Conference</a>
+                    </li>                    
+                </ul>
+            </nav>
+            <div class="header__nav__interaction">
+                <form >
+                    <input id="search__input" class="header__search__input" type="text" placeholder="Type something...">
+                </form>
+                <button id="search__button" class="header__search__button">Search</button>
+                <button id="clear__button" class="header__clear__button">Clear</button>
+            </div> 
+        </div>
+    </header>
+    <section class="main__page">
+        <div class="main__bar">
+                <div class="first__bar">
+                <div class="bar__container">
+                    <h2>Manage Participant</h2>
+                    <div class="sort__bar">
+                        <a class="bar__text">Sort by amount <br> of participant</a>
+                        <label class="switch">
+                            <input type="checkbox" name="switch" id="switch">
+                            <span class = "slider"></span>
+                        </label>
+                    </div>
+                    <div class="bar__inner__border"></div>
+                    <h4 class="bar__text">Count total amount of participant:</h4>
+                    <button id="count__button" type="button" class="bar__button">Count</button>
+                    <div class="bar__count__info">
+                        <h4 class="bar__text">Total amount of participant:</h4>
+                        <h4 class="bar__count hidden" id="bar__count"></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="bar__right__border"></div>
+        </div>
+        <ul id="items_container" class="main__page__items">
+
+        </ul>
+    </section>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
