@@ -1,0 +1,17 @@
+.btn_more {
+    font-size: 14px;
+    font-family:Helvetica, sans-serif;
+    background-color: white;
+    border-radius: 4px;
+    display: block;
+    margin:50px auto;
+    border-width: 1px;
+    width: 116px;
+    height: 30px;
+    animation: animation 2s linear infinite;
+    text-decoration: inherit;
+}
+
+.btn_more:hover {
+    background-color: #F5F5F5;
+}
