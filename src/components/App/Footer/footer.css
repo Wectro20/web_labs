@@ -1,0 +1,33 @@
+.footer {
+    background-color: aliceblue;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.footer_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact_us {
+    display: flex;
+}
+.footer_logo {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+.footer_logos {
+    height: 50px;
+    width: 50px;
+}
+.footer_branding {
+    width: 200px;
+    font-family: Avenir;
+    font-size: 13px;
+}
+.upperline {
+    height: 1px;
+    width: 100%;
+    background-color:black;
+}
