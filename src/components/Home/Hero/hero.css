@@ -1,0 +1,17 @@
+.hero_container {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+.hero_img {
+    height: 250px;
+    width: 250px;
+    border-radius: 4px;
+}
+
+.inner_text {
+    font-size: 13px;
+    width: 40%;
+    font-family: Avenir;
+}
