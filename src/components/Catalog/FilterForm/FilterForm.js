@@ -33,7 +33,7 @@ const Filter = () => {
                     </div>
                 </div>
                 <div className="searchBlock">
-                    <input id="search__input" className="header__search__input" type="text" placeholder="Type something..."></input>
+                    <input id="search__input" className="header__search__input" type="text" placeholder="Type something..."/>
                     <button type="button" className="searchBut" onClick={()=>SearchImpl()}>Search</button>
                     <button type="button" className="searchBut" onClick={()=>handleReset()}>Clear</button>
                 </div>
@@ -47,30 +47,27 @@ const Filter = () => {
     );
 
     function filterByAmountOfPeople(){
-        let sortedConference = Array.from(conference);
-        sortedConference.sort((conf1, conf2) => conf2.amount - conf1.amount);
-        setConferenceRender(sortedConference);
+        Array.from(conference);
+        axios.get(`http://localhost:8080/conference/sort?name=amount`)
+            .then((result) => {setConferenceRender(result.data)});
     }
 
     function filterByPrice(){
-        let sortedConference = Array.from(conference);
-        sortedConference.sort((conf1, conf2) => conf1.price - conf2.price);
-        setConferenceRender(sortedConference);
+        Array.from(conference);
+        axios.get(`http://localhost:8080/conference/sort?name=price`)
+            .then((result) => {setConferenceRender(result.data)});
     }
 
     function SearchImpl(){
-
         const title = document.getElementById('search__input').value;
-
-        let temp = conference.filter(farm => farm.name.search(title) !== -1);
-        console.log(temp);
-        setConferenceRender(temp);
+        axios.get(`http://localhost:8080/conference/search?name=${title}`)
+            .then((result) => {setConferenceRender(result.data)});
     }
 
     function handleReset() {
         document.getElementById('search__input').value = " ";
         setConferenceRender(conference);
-    };
+    }
 }
 
 export default Filter;

@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import ConferenceTemplate from "../../Items/ConferenceTemplate";
-import axios from "axios";
 import Loading from "../../Loading/Loading";
 
 const HeroCatalog = (props) => {
