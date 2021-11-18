@@ -1,0 +1,38 @@
+.inner_intro img {
+    width: 200px;
+    height: 130px;
+    border-radius: 2px;
+}
+.inner_intro {
+    background-color: #e7f1f8;
+    padding: 15px 15px 10px 15px;
+    border-radius: 6px;
+    font-family: Helvetica;
+    font-size: 13px;
+    box-shadow: 10px 5px 5px #aaaaaa;
+}
+
+.viewMore {
+    font-size: 12px;
+    font-family:Helvetica, sans-serif;
+    background-color: white;
+    border-radius: 4px;
+    border-width: 1px;
+    width: 80px;
+    height: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.viewMore:hover {
+    background-color: #F5F5F5;
+}
+.items {
+    margin-top: 20px;
+}
+.inner_intro h5 {
+    font-size: 15px;
+    margin-top: 20px;
+}
