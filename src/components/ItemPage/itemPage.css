@@ -1,0 +1,15 @@
+.item_intro {
+    background-color: #e7f1f8;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 310px;
+    width: 800px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 10px 5px 5px #aaaaaa;
+}
+.itemconf {
+    margin-left: 20px;
+}
